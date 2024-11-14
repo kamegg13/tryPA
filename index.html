@@ -3,24 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Test</title>
+    <title>Accueil - Site de Test</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur le site de test</h1>
-        <p>Ce site est conçu pour tester des outils comme Pendo, Hotjar, et PostHog.</p>
+        <h1>Bienvenue sur notre Site de Test</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Section principale</h2>
-            <p>Ceci est une section pour tester les interactions de l'utilisateur.</p>
-            <button onclick="alert('Bouton cliqué!')">Cliquez-moi</button>
-        </section>
-    </main>
+    <section class="intro">
+        <h2>Découvrez nos fonctionnalités</h2>
+        <p>Ce site est conçu pour tester l'intégration d'outils d'analyse.</p>
+        <button onclick="alert('Bienvenue!')">Cliquez ici pour en savoir plus</button>
+    </section>
+    <section class="gallery">
+        <h2>Galerie</h2>
+        <div class="slider">
+            <img src="images/image1.jpg" alt="Image 1">
+            <img src="images/image2.jpg" alt="Image 2">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+    </section>
     <footer>
         <p>© 2024 Site de Test</p>
     </footer>
-    <!-- Script d'analyse pour Pendo, Hotjar, ou PostHog -->
-    <!-- Insérez ici les scripts fournis par les outils de suivi que vous voulez tester -->
 </body>
 </html>
