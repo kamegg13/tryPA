@@ -10,6 +10,29 @@
         posthog.init('phc_49d9N0HJexMwv8TdwxSjSxQDBit8JxbFEUFcH3mpgu4',{api_host:'https://eu.i.posthog.com', person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
         })
     </script>
+    <script>
+    (function(apiKey){
+        (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
+        v=['initialize','identify','updateOptions','pageLoad','track'];for(w=0,x=v.length;w<x;++w)(function(m){
+            o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+            y=e.createElement(n);y.async=!0;y.src='https://cdn.eu.pendo.io/agent/static/'+apiKey+'/pendo.js';
+            z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+    
+        pendo.initialize({
+            visitor: {
+                id: <visitor-id-goes-here>,
+                email: <email-goes-here>,
+                firstName: <first-name-goes-here>,
+                lastName: <last-name-goes-here>,
+            },
+            account: {
+                id: <account-id-goes-here>,
+                accountName: <account-name-goes-here>,
+                payingStatus: <paying-status-goes-here>,
+            }
+        });
+    })('ca43f258-4343-4acc-55f8-dd091f2593ba');
+    </script>
 </head>
 <body>
     <header>
